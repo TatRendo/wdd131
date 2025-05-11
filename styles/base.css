@@ -5,12 +5,6 @@
     src: url("Alaba-Regular.ttf");
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
 
 :root {
     --primary-color: #141415;
@@ -27,46 +21,85 @@ body {
     --nav-hover-background-color: #031518;
 }      
 
-header {
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent2-color);
+    color: var(--nav-hover-link-color);
+  }
+  
+  header {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     padding: 1rem;
     text-align: center;
   }
   
+  header h1 .highlight {
+    color: #ffe600;
+  }
+  
   nav {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    background-color: #005599;
+    background-color: var(--nav-hover-link-color);
     padding: 0.5rem;
+    flex-wrap: wrap;
   }
   
   nav a {
     color: var(--accent2-color);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
   }
   
   nav a:hover {
-    background-color: #0077cc;
-    border-radius: 4px;
+    background-color: #555;
+    border-radius: 5px;
   }
   
   main {
-    max-width: 900px;
-    margin: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding: 1rem;
   }
   
   .card {
     background-color: var(--accent2-color);
-    border: 1px solid #ccc;
     padding: 1rem;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: var(--accent1-color);
+  }
+  
+  .card .content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .resources ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .resources li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .resources a {
+    color: var(--accent1-color);
+    text-decoration: underline;
   }
   
   footer {
@@ -74,4 +107,9 @@ header {
     color: var(--accent2-color);
     text-align: center;
     padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0.3rem;
   }
