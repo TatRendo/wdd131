@@ -5,6 +5,13 @@
     src: url("Alaba-Regular.ttf");
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
 :root {
     --primary-color: #141415;
     --secondary-color: #214E34;
@@ -19,3 +26,52 @@
     --nav-hover-link-color: #7c7d7e;
     --nav-hover-background-color: #031518;
 }      
+
+header {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #005599;
+    padding: 0.5rem;
+  }
+  
+  nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a:hover {
+    background-color: #0077cc;
+    border-radius: 4px;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: var(--accent2-color);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 1rem;
+  }
