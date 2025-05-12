@@ -39,6 +39,12 @@ body {
   header h1 .highlight {
     color: #ffe600;
   }
+
+  h2 {
+    background-color: var(--nav-hover-link-color);
+    color: var(--accent1-color);
+    padding: 1rem;
+  }
   
   nav {
     display: flex;
