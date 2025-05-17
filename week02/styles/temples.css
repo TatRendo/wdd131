@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
 :root {
@@ -23,6 +26,7 @@ header {
     justify-content: center;
     padding: 20px;
     border: 1px solid rgb(0, 0, 0.1);
+    position: relative;
 }
 
 main {
@@ -92,14 +96,18 @@ figcaption {
 
 .Temple {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-gap: 25px;
-  text-align: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-.Temple img {
+.Temple {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+/*.Temple img {
   border-radius: 5px;
-}
+}*/
+
 /*-----*/
 
 
