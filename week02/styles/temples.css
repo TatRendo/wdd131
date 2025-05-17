@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #141415;
+    --secondary-color: #214E34;
+    --accent1-color: #364156;
+    --accent2-color: #C3C2C2;
+
+    --nav-background-color: #011638;
+    --nav-link-color: #d3cece;
+    --nav-hover-link-color: #7c7d7e;
+    --nav-hover-background-color: #031518;
+}  
+
+header {
+    background-color: var(--nav-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0.1);
+}
+
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: var(--nav-background-color);
+    margin:  0 auto;
+    max-width: 800px;
+}
+
+h1 {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    margin:  0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+h2 {
+    font-size: 2.5rem; 
+    padding: 1rem;
+    /*background-color: despues;*/
+    text-align: center;
+    font-family: 'Acme', Arial, sans-serif; 
+    color:#333;
+}
+
+figure {
+    background-color:#fff;
+}
+
+img {
+    width: 200px; height: auto; margin: .5rem;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+/*-----*/
+
+.Temple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.Temple img {
+  border-radius: 5px;
+}
+/*-----*/
+
+.active {
+    color: yellow;
+}
+
+/* Larger Views -----------------*/
+@media (min-width: 240px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;;
+    }
+}
+
+
+  footer {
+    background-color: var(--nav-background-color);
+    color:#fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0.3rem;
+  }
+
+  #lastModified {
+  color: #ffe600;
+}
