@@ -74,7 +74,7 @@ h2 {
     color:#333;
 }
 
-div {margin: 1rem auto; max-width: 960px; padding: .5rem;}
+section {margin: 1rem auto; max-width: 960px; padding: .5rem;}
 
 figure {
     background-color:#fff;
@@ -92,8 +92,8 @@ figcaption {
 
 .Temple {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 25px;
   text-align: center;
 }
 
@@ -101,6 +101,7 @@ figcaption {
   border-radius: 5px;
 }
 /*-----*/
+
 
 .active {
     color: yellow;
