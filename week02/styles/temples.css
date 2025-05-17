@@ -96,17 +96,10 @@ figcaption {
 
 .Temple {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 25px;
+  text-align: center;
 }
-
-.Temple {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-/*.Temple img {
-  border-radius: 5px;
-}*/
 
 /*-----*/
 
