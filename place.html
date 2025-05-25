@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore - Amazonas</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Amazonas</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/place/capybara1.jpg" media="(max-width: 500px)">
+        <source srcset="images/place/amazonica1200x630.jpg" media="(max-width: 1000px)">
+        <img src="images/place/amazonica1200x630.jpg" alt="Scenic view of the location" width="960" height="480">
+      </picture>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
+      <p>Temperature: <span id="temperature">24</span> °C</p>
+      <p>Wind Speed: <span id="windSpeed">2.5</span> km/h</p>
+      <p>Wind Chill: <span id="windChill">79</span> °C</p>
+    </section>
+  </main>
+
+  <footer>
+        <p>&copy; <span id="currentyear"></span> 🍁 Tatiana Rendon Rodriguez 🍁 Colombia</p>
+        <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
