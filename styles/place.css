@@ -32,7 +32,7 @@ main {
 @media (min-width: 800px) {
   .weather h2::after {
     content: "";
-    background-image: url('../images/weather-icon.svg');
+    background-image: url('../images/place/tem.jpg');
     background-size: contain;
     display: inline-block;
     width: 24px;
