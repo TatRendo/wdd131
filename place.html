@@ -14,19 +14,29 @@
   </header>
 
   <main>
-    <section class="hero">
+    <sectio class="hero">
       <picture>
         <source srcset="images/place/capybara1.jpg" media="(max-width: 200px)">
         <source srcset="images/place/amazonica1200x630.jpg" media="(max-width: 1000px)">
         <img src="images/place/amazonica1200x630.jpg" alt="Scenic view of the location" width="960" height="480">
       </picture>
-    </section>
 
-    <section class="weather">
-      <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
-      <p>Temperature: <span id="temperature">24</span> °C</p>
-      <p>Wind Speed: <span id="windSpeed">2.5</span> km/h</p>
-      <p>Wind Chill: <span id="windChill">79</span> °C</p>
+      <div class="container">
+        <div class="data-card">
+          <h2>Data <span class="Data" aria-hidden="true"></span></h2>
+          <p>Area: <span id="area">7.7 sq</span> Km</p>
+          <p>Capital: <span id="capital">Leticia</span></p>
+          <p>Languages: <span id="languages">Spanish, Portuguese and native languages</span></p>
+          <p>Calling  code: <span id="capital">+608</span>/Colombia</p>
+        </div>
+
+        <div class="weather-card">
+          <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
+          <p>Temperature: <span id="temperature">24</span> °C</p>
+          <p>Wind Speed: <span id="windSpeed">2.5</span> km/h</p>
+          <p>Wind Chill: <span id="windChill">N/A</span> °C</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -34,6 +44,8 @@
         <p>&copy; <span id="currentyear"></span> 🍁 Tatiana Rendon Rodriguez 🍁 Colombia</p>
         <p id="lastModified"></p>
   </footer>
+
+  <script src="scripts/main.js"></script>
 
 </body>
 </html>

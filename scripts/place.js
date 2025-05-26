@@ -1,23 +1,24 @@
-function calculateWindChill(tempF, speedMph) {
+function calculateWindChillCelsius(tempC, speedKmH) {
   return (
-    35.74 +
-    0.6215 * tempF -
-    35.75 * Math.pow(speedMph, 0.16) +
-    0.4275 * tempF * Math.pow(speedMph, 0.16)
+    13.12 +
+    0.6215 * tempC -
+    11.37 * Math.pow(speedKmH, 0.16) +
+    0.3965 * tempC * Math.pow(speedKmH, 0.16)
   ).toFixed(2);
 }
 
-// Footer info
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+// ----------------
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
-// Windchill logic
+// ----------------------
 const temp = parseFloat(document.getElementById("temperature").textContent);
 const wind = parseFloat(document.getElementById("windSpeed").textContent);
 const output = document.getElementById("windChill");
 
-if (temp <= 50 && wind > 3) {
-  output.textContent = `${calculateWindChill(temp, wind)} °F`;
+// ---------------------------
+if (temp <= 10 && wind > 4.8) {
+  output.textContent = `${calculateWindChillCelsius(temp, wind)} °C`;
 } else {
   output.textContent = "N/A";
 }
