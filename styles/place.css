@@ -90,16 +90,13 @@ main {
   }
 }
 
-/* ----------- */
+/* -----------  movil*/
 @media (max-width: 799px) {
   .container {
+    position: static !important;
+    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
-  }
-
-  .data-card,
-  .weather-card {
-    max-width: 90%;
   }
 }
 
